@@ -126,11 +126,11 @@
         upper_layer {
             bindings = <
 &msc SCRL_UP  &msc SCRL_DOWN
-&kp CAPS      &kp LEFT_WIN    &td0          &kp ESC       &kp TAB
-&none         &kp UP          &none         &sys_reset    &ext_power EP_TOG  &none         &kp LT           &kp GT       &kp PIPE      &kp KP_EQUAL
-&kp LEFT      &kp DOWN        &kp RIGHT     &none         &kp BSLH           &kp AMPS      &kp LBRC         &kp RBRC     &kp CARET     &kp BSPC
-&kp LSHFT     &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3       &bl BL_DEC    &rgb_ug RGB_TOG  &bl BL_INC   &td_boot_out  &kp ENTER
-                              &kp LCTRL                   &kp LALT           &kp SPACE     &to SYM          &to DEFAULT
+&kp CAPS      &kp LEFT_WIN    &td0          &mt ESC K_BACK  &kp TAB
+&none         &kp UP          &none         &sys_reset      &ext_power EP_TOG  &none         &kp LT           &kp GT       &kp PIPE      &kp KP_EQUAL
+&kp LEFT      &kp DOWN        &kp RIGHT     &none           &kp BSLH           &kp AMPS      &kp LBRC         &kp RBRC     &kp CARET     &kp BSPC
+&kp LSHFT     &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3       &bl BL_DEC    &rgb_ug RGB_TOG  &bl BL_INC   &td_boot_out  &kp ENTER
+                              &kp LCTRL                     &kp LALT           &kp SPACE     &to SYM          &to DEFAULT
             >;
         };
 
