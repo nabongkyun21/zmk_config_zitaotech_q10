@@ -92,7 +92,7 @@ layers:
   - CAPS
   - LEFT WIN
   - '&td0'
-  - ESC
+  - {t: BACK, h: ESC}
   - TAB
   - ''
   - UP
