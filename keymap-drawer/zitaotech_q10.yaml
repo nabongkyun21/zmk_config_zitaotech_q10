@@ -49,7 +49,7 @@ layers:
   - PSCRN
   - AC SEARCH
   - '&mkp LCLK'
-  - F5
+  - ESC
   - F12
   - '#'
   - '1'
@@ -89,11 +89,11 @@ layers:
   upper:
   - '&msc SCRL_UP'
   - '&msc SCRL_DOWN'
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
+  - CAPS
+  - LEFT WIN
   - '&td0'
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
+  - ESC
+  - TAB
   - ''
   - UP
   - ''
@@ -115,13 +115,13 @@ layers:
   - ^
   - BSPC
   - LSHFT
-  - ''
-  - ''
-  - RGB BRD
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
   - '&bl BL_DEC'
   - RGB TOG
   - '&bl BL_INC'
-  - RGB BRI
   - '&td_boot_out'
   - ENTER
   - LCTRL
