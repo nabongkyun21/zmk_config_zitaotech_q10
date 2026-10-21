@@ -103,6 +103,48 @@
             #binding-cells = <0>;
             bindings = <&kp R>, <&kp LS(R)>;
         };
+
+        td_e2e: td_e2e {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_E2E";
+            #binding-cells = <0>;
+            bindings = <&kp E>, <&kp LS(E)>;
+        };
+
+        td_w2w: td_w2w {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_W2W";
+            #binding-cells = <0>;
+            bindings = <&kp E>, <&kp LS(W)>;
+        };
+
+        td_q2q: td_q2q {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_Q2Q";
+            #binding-cells = <0>;
+            bindings = <&kp Q>, <&kp LS(Q)>;
+        };
+
+        td_t2t: td_t2t {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_T2T";
+            #binding-cells = <0>;
+            bindings = <&kp T>, <&kp LS(T)>;
+        };
+
+        td_o2o: td_o2o {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_O2O";
+            #binding-cells = <0>;
+            bindings = <&kp O>, <&kp LS(O)>;
+        };
+
+        td_p2p: td_p2p {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_P2P";
+            #binding-cells = <0>;
+            bindings = <&kp P>, <&kp LS(P)>;
+        };
     };
 
     keymap {
@@ -110,12 +152,12 @@
 
         default_layer {
             bindings = <
-&mkp LCLK  &mkp RCLK
-&kp CLCK   &kp LGUI   &mkp LCLK           &mt ESC K_BACK  &kp TAB
-&kp Q      &kp W      &kp E               &td_r2r         &kp T     &kp Y        &kp U    &kp I      &kp O          &kp P
-&kp A      &kp S      &kp D               &kp F           &kp G     &kp H        &kp J    &kp K      &kp L          &kp BSPC
-&sk LSHFT  &kp Z      &kp X               &kp C           &kp V     &kp B        &kp N    &kp M      &mt DLLR SEMI  &kp ENTER
-                      &sk_kp LCTRL LCTRL                  &kp LALT  &kp SPACE    &to SYM  &to UPPER
+&kp LANGUAGE_1  &mkp RCLK
+&kp CLCK        &kp LGUI   &mkp LCLK           &mt ESC K_BACK  &kp TAB
+&td_q2q         &td_w2w    &td_e2e             &td_r2r         &td_t2t   &kp Y        &kp U    &kp I      &td_o2o        &td_p2p
+&kp A           &kp S      &kp D               &kp F           &kp G     &kp H        &kp J    &kp K      &kp L          &kp BSPC
+&sk LSHFT       &kp Z      &kp X               &kp C           &kp V     &kp B        &kp N    &kp M      &mt DLLR SEMI  &kp ENTER
+                           &sk_kp LCTRL LCTRL                  &kp LALT  &kp SPACE    &to SYM  &to UPPER
             >;
         };
 
@@ -133,11 +175,11 @@
         upper_layer {
             bindings = <
 &msc SCRL_UP  &msc SCRL_DOWN
-&kp CAPS      &kp LEFT_WIN    &td0          &mt ESC K_BACK  &kp TAB
-&none         &kp UP          &none         &sys_reset      &ext_power EP_TOG  &none         &kp LT           &kp GT       &kp PIPE      &kp KP_EQUAL
-&kp LEFT      &kp DOWN        &kp RIGHT     &none           &kp BSLH           &kp AMPS      &kp LBRC         &kp RBRC     &kp CARET     &kp BSPC
-&kp LSHFT     &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3       &bl BL_DEC    &rgb_ug RGB_TOG  &bl BL_INC   &td_boot_out  &kp ENTER
-                              &kp LCTRL                     &kp LALT           &kp SPACE     &to SYM          &to DEFAULT
+&kp CAPS      &kp LEFT_WIN    &td0       &mt ESC K_BACK  &kp TAB
+&none         &kp UP          &none      &sys_reset      &ext_power EP_TOG  &none         &kp LT           &kp GT       &kp PIPE      &kp KP_EQUAL
+&kp LEFT      &kp DOWN        &kp RIGHT  &none           &kp BSLH           &kp AMPS      &kp LBRC         &kp RBRC     &kp CARET     &kp BSPC
+&kp LSHFT     &none           &none      &none           &none              &bl BL_DEC    &rgb_ug RGB_TOG  &bl BL_INC   &td_boot_out  &kp ENTER
+                              &kp LCTRL                  &kp LALT           &kp SPACE     &to SYM          &to DEFAULT
             >;
         };
 
