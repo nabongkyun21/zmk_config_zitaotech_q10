@@ -115,7 +115,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_W2W";
             #binding-cells = <0>;
-            bindings = <&kp E>, <&kp LS(W)>;
+            bindings = <&kp W>, <&kp LS(W)>;
         };
 
         td_q2q: td_q2q {
