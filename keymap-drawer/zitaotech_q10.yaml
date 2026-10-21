@@ -1,23 +1,23 @@
 layout: {zmk_keyboard: zitaotech_q10}
 layers:
   default:
-  - '&mkp LCLK'
+  - LANGUAGE 1
   - '&mkp RCLK'
   - CLCK
   - LGUI
   - '&mkp LCLK'
   - {t: BACK, h: ESC}
   - TAB
-  - Q
-  - W
-  - E
+  - '&td_q2q'
+  - '&td_w2w'
+  - '&td_e2e'
   - '&td_r2r'
-  - T
+  - '&td_t2t'
   - Y
   - U
   - I
-  - O
-  - P
+  - '&td_o2o'
+  - '&td_p2p'
   - A
   - S
   - D
@@ -115,10 +115,10 @@ layers:
   - ^
   - BSPC
   - LSHFT
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
+  - ''
+  - ''
+  - ''
+  - ''
   - '&bl BL_DEC'
   - RGB TOG
   - '&bl BL_INC'
